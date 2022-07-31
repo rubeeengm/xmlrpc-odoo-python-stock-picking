@@ -34,7 +34,7 @@ campos = {
         , 'scheduled_date'
         , 'move_line_ids'
         , 'x_solicitante'
-        , 'partner_id' # paciente}
+        , 'partner_id' # paciente
         , 'x_cama'
     ]
 }

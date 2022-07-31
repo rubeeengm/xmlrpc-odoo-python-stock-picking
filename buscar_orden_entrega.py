@@ -23,9 +23,9 @@ dominio = [
         [
             'id', '=', id_orden_entrega
         ]
-        # , [
-        #     'x_solicitante', '=', id_usuario_solicitante
-        # ]
+        , [
+            'x_solicitante', '=', id_usuario_solicitante
+        ]
     ]
 ]
 
@@ -35,9 +35,9 @@ campos = {
         , 'name' # numero de pedido
         , 'state'
         , 'scheduled_date'
-        , 'move_line_ids_without_package' # indice numero 4
+        , 'move_line_ids_without_package'
         , 'x_solicitante'
-        , 'partner_id' # paciente}
+        , 'partner_id' # paciente
         , 'x_cama'
     ]
 }

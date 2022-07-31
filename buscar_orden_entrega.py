@@ -15,8 +15,8 @@ models = xmlrpc.client.ServerProxy('{}/xmlrpc/2/object'.format(url))
 model = 'stock.picking'
 method = 'search_read'
 
-id_orden_entrega = 5
-id_usuario_solicitante = None
+id_orden_entrega = 31
+id_usuario_solicitante = 9
 
 dominio = [
     [
@@ -90,3 +90,7 @@ lineas_orden_entrega = models.execute_kw(
     , dominio
     , campos
 )
+
+print()
+print('lineas')
+print(lineas_orden_entrega)

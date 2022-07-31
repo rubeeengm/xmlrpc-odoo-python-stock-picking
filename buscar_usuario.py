@@ -9,25 +9,23 @@ common = xmlrpc.client.ServerProxy('{}/xmlrpc/2/common'.format(url))
 
 uid = common.authenticate(db, username, password, {})
 
-print(uid)
-
 models = xmlrpc.client.ServerProxy('{}/xmlrpc/2/object'.format(url))
 
-model = 'res.users'
+model = 'res.partner'
 method = 'search_read'
 
-id_usuario = 6
+id_tarjeta = '123123'
 dominio = [
     [
         [
-            'id', '=', id_usuario
+            'x_id_tarjeta', '=', id_tarjeta
         ]
     ]
 ]
 
 campos = {
     'fields': [
-        'id', 'login', 'partner_id'
+        'id', 'name', 'x_id_tarjeta'
     ]
 }
 

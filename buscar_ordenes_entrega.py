@@ -14,11 +14,12 @@ models = xmlrpc.client.ServerProxy('{}/xmlrpc/2/object'.format(url))
 model = 'stock.picking'
 method = 'search_read'
 
-id_usuario_solicitante = 6
+# id del modelo res.partner
+id_solicitante = 9
 dominio = [
     [
         [
-            'x_solicitante', '=', id_usuario_solicitante
+            'x_solicitante', '=', id_solicitante
         ]
         , [
             'state', '=', 'assigned'
